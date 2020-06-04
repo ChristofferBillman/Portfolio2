@@ -19,6 +19,7 @@ COLORS
     margin: 0 auto;
   }
   .card {
+    position: relative;
     width: 100%;
     margin: 40px 0 40px 0;
     background-color: white;
@@ -61,6 +62,9 @@ COLORS
   .palered {
     color: #B97F7F;
   }
+  .paleblue {
+    color: #8595c2;
+  }
   #name {
     color: #F066BB;
     font-size: 70px;
@@ -81,6 +85,10 @@ COLORS
   p {
     font-family: 'Open Sans';
   }
+  .ntd {
+    text-decoration: inherit;
+    display: inline-block;
+}
   
   /* LAYOUT */
   .center-text {
@@ -98,6 +106,13 @@ COLORS
     overflow: hidden;
     border-radius:15px 15px 0 0 ;
     object-fit: cover;
+  }
+  .image-crop-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    object-fit: cover;
+    overflow: hidden;
   }
   .card-section {
     background-color: rgba(240, 102, 187,0.1);
@@ -124,6 +139,12 @@ COLORS
   }
   .collapsiable-button {
     cursor: pointer;
+  }
+  .pinned-image {
+    position: absolute;
+    top: 120px;
+    right: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
   }
   
   @media(max-width: 600px) {
