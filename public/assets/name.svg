@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="437" height="147" viewBox="0 0 437 147">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffdeea;
+      }
+
+      .cls-1, .cls-2 {
+        font-size: 64px;
+        font-family: Helvetica-Light, Helvetica;
+        font-weight: 300;
+      }
+
+      .cls-2 {
+        fill: #4b4b4b;
+      }
+    </style>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(-495 -90)">
+    <text id="CHRISTOFFER_BILLMAN" data-name="CHRISTOFFER
+BILLMAN" class="cls-1" transform="translate(501 145)"><tspan x="0" y="0">CHRISTOFFER</tspan><tspan x="0" y="77">BILLMAN</tspan></text>
+    <text id="CHRISTOFFER_BILLMAN-2" data-name="CHRISTOFFER
+BILLMAN" class="cls-2" transform="translate(495 139)"><tspan x="0" y="0">CHRISTOFFER</tspan><tspan x="0" y="77">BILLMAN</tspan></text>
+  </g>
+</svg>

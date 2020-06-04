@@ -1,0 +1,47 @@
+extends layout
+
+block content
+    .center
+        h4#name-discreet Christoffer Billman aka
+        h1#name Popkrull
+        p.ingress.text-padding Civiningengörsstudent - Interaktion och Design.
+        p.ingress Här kan ni se mina projekt, pågående och slutförda! Här kan du också se lite diverse som jag har på g annars.
+
+        h3.text-padding#h3-margin SOCIALA LÄNKAR
+
+        .card
+            .padding-container
+                a(href="https://www.snapchat.com/add/popkrull")
+                    img(src="assets/snapchat.svg").symbol-container
+                a(href="https://www.instagram.com/popkrull/")
+                    img(src="assets/instagram.png").symbol-container
+                p.text-padding
+                    p.ingress Hojta om det är något!
+
+        h3.text-padding#h3-margin HÄNDER
+        .card
+            img(src="assets/photos/mott2020.jpg").image-crop
+            .padding-container
+                h2 Filminspelning Mottagning
+                h4.palered ID-Mottagning 2020
+                p.text-padding Jag är med och anordnar årets mottagning av nya studenter på mitt program, med fyra andra roliga!
+                .collapsiable-content.text-padding
+                    p Här var vår photoshoot, de var väldigt roligt om jag får säga det själv! Det mesta här är placeholder just nu så känn dig riktigt ägd.
+            .card-section
+                .padding-container.collapsiable-button
+                    p Läs mer
+
+        .card
+            img(src="assets/bg.svg").image-crop
+            .padding-container
+                h2 Projekt #2
+                p.text-padding Hej! Här är en beskrivning av projekt #2
+                .collapsiable-content
+                    p Hej igen wow.
+            .card-section
+                .padding-container.collapsiable-button
+                    p Gå till projekt #2
+    script(src="/javascripts/index.js")
+
+
+

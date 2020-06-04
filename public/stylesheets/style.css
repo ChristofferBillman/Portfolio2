@@ -1,0 +1,138 @@
+
+/*
+COLORS
+  bg: #edf2f5
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("../assets/bg2.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0;
+}
+.center {
+  width: 50%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.card {
+  width: 100%;
+  margin: 40px 0 40px 0;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  border-radius: 15px;
+}
+.button {
+  width: 200px;
+  height: 30px;
+  margin: 30px;
+  border-radius: 30px;
+  background-color: lightblue;
+  padding: 10px 10px 10px 30px;
+  display: flex;
+  align-items: center;
+}
+
+/* FONTS */
+h1 {
+  font-family: 'Open Sans';
+}
+h2 {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  /*color: rgb(100,100,100);*/
+  font-size: 30px;
+}
+h3 {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  color: rgb(200,200,200);
+  font-size: 16px;
+}
+h4 {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  color: rgba(128, 128, 128, 0.913);
+  font-size: 14px;
+}
+.palered {
+  color: #B97F7F;
+}
+#name {
+  color: #F066BB;
+  font-size: 70px;
+  font-weight: 700;
+  margin: 0;
+}
+#name-discreet {
+  color: lightgray;
+  margin: 50px 0 -10px 0;
+}
+#h3-margin {
+  margin: 50px 0 -20px 0;
+  color: black;
+}
+h4 {
+  font-family: 'Open Sans';
+}
+p {
+  font-family: 'Open Sans';
+}
+
+/* LAYOUT */
+.center-text {
+  text-align: center;
+}
+.padding-container {
+  padding: 20px;
+}
+.text-padding {
+  padding: 20px 0 0 0;
+}
+.image-crop {
+  width: 100%; /* width of container */
+  height: 200px; /* height of container */
+  overflow: hidden;
+  border-radius:15px 15px 0 0 ;
+  object-fit: cover;
+}
+.card-section {
+  background-color: rgba(240, 102, 187,0.1);
+  border-radius: 0 0 15px 15px;
+  transition-duration: 300ms;
+}
+.card-section:hover {
+  background-color: rgba(240, 102, 187,0.2);
+  transition-duration: 300ms;
+}
+.ingress {
+  color: rgb(133, 103, 103);
+}
+.symbol-container {
+  width: 40px;
+  height: 40px;
+  margin: 0 20px 0 0;
+}
+.collapsiable-content {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 200ms ease-out;
+}
+.collapsiable-button {
+  cursor: pointer;
+}
+
+@media(max-width: 600px) {
+
+  .center {
+    width: 90%;
+  }
+  body {
+    background-image: url("../assets/bg_mobile.svg");
+  }
+
+}
