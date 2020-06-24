@@ -2,20 +2,24 @@ extends layout
 
 block content
     .center
+
         h4#name-discreet Christoffer Billman aka
         h1#name Popkrull
         p.ingress.text-padding Civiningengörsstudent - Interaktion och Design.
         p.ingress Här kan ni se mina projekt, pågående och slutförda! Här kan du också se lite diverse som jag har på g annars.
 
+        .card.status-card.padding-container
+            h3 Status...
+
         h3.text-padding#h3-margin SOCIALT & LÄNKAR
 
         .card
             .padding-container
-                a(href="https://www.snapchat.com/add/popkrull")
+                a(href="https://www.snapchat.com/add/popkrull" target="_blank")
                     img(src="assets/snapchat.svg").symbol-container
-                a(href="https://www.instagram.com/popkrull/")
+                a(href="https://www.instagram.com/popkrull/" target="_blank")
                     img(src="assets/instagram.png").symbol-container
-                a(href="https://github.com/ChristofferBillman")
+                a(href="https://github.com/ChristofferBillman" target="_blank")
                     img(src="assets/github.svg").symbol-container
                 p.text-padding
                     p.ingress Hojta om det är något!
@@ -27,9 +31,11 @@ block content
             .padding-container
                 h2 Filminspelning Mottagning
                 h4.palered ID-Mottagning 2020
-                p.text-padding Jag är med och anordnar årets mottagning av nya studenter på mitt program, med fyra andra roliga!
+                p.text-padding Jag är med och anordnar årets mottagning av nya studenter på mitt program!
                 .collapsiable-content.text-padding
-                    p Här var vår photoshoot, de var väldigt roligt om jag får säga det själv! Det mesta här är placeholder just nu så känn dig riktigt ägd.
+                    p
+                        |Hej! I höst så kommer jag och fyra andra personer anordna årets mottagning 
+                        | hEllo
             .card-section
                 .padding-container.collapsiable-button
                     p Läs mer
@@ -51,12 +57,12 @@ block content
         h3.text-padding#h3-margin PROJEKT
 
         .card
-            img(src="assets/bg.svg").image-crop
+            img(src="assets/clicker.png").image-crop
             .padding-container
                 h2 Clicker
                 p.text-padding Hej! Här är en beskrivning av projekt #2
             .card-section
-                a.ntd(href="https://christofferbillman.github.io/Clicker/")
+                a.ntd(href="https://christofferbillman.github.io/Clicker/" target="_blank")
                     .padding-container.ntd
                         p.ntd Gå till projekt #2
     script(src="/javascripts/index.js")

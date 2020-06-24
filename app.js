@@ -6,7 +6,6 @@ var app = express()
 var path = require('path')
 var mysql = require('mysql')
 var sqlstring = require("sqlstring")
-var md5 = require('md5')
 var colors = require('colors')
 
 var db = require('./database.js')
@@ -18,4 +17,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 var connection = db.connectDb()
 
-require('./routes')(app, connection)
+require('./routes')(app,connection)
+
+var status = 1;
+
+app.broadcast

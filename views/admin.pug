@@ -1,0 +1,29 @@
+extends layout
+
+mixin status(name,status)
+    div
+        p.status-text= name
+        if status
+            .status-indicator
+        else
+            p Ingen status har getts.
+
+block content
+
+    link(rel="stylesheet" href="styles/admin.css")
+    .center
+        h1.text-padding Kontrollpanel
+        h4 http://pkrl.xyz
+        .card
+            .padding-container
+                h3 Serverstatus
+                +status('Databas','true')
+                +status('Node','true')
+
+        .card
+            .padding-container
+                h3 Sätt status
+                .dsp-inline
+                    button Skola
+                    button Ledig
+                    button Upptagen

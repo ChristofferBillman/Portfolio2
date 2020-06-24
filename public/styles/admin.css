@@ -1,0 +1,10 @@
+body {
+    background-image: url("../assets/admin-bg.svg");
+}
+.status-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 10px;
+    display: inline;
+}

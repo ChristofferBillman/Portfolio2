@@ -21,3 +21,8 @@ class collapsiable {
 new collapsiable(coll_btn[0],coll_cont[0]);
 new collapsiable(coll_btn[1],coll_cont[1]);
 
+axios.post("/pa",{"pswd": pswd}).then(res => 
+    {
+    
+})
+
