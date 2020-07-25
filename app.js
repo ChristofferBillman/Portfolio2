@@ -20,5 +20,3 @@ var connection = db.connectDb()
 require('./routes')(app,connection)
 
 var status = 1;
-
-app.broadcast

@@ -8,11 +8,11 @@ module.exports = function(app,connection) {
     var md5 = require('md5')
     var port = secrets.port
 
+    var status = 0; 
+
     app.use(bodyParser.urlencoded({extended: true }));
     app.use(bodyParser.json());
     app.use(cookieParser())
-
-    var users = [];
 
     app.post('/password',(req,res) => {
         res.token = md5(req.body.pswd)
@@ -33,21 +33,15 @@ module.exports = function(app,connection) {
             res.render('password')
         }
     })
+    app.post('/status', (req,res) =>{
+        status = req.status;
+        console.log(req.pstatus)
+        res.send("OK")
+    })
 
     var portString = port.toString()
 
     app.listen(port, () => {
         console.log('[STATUS]'.black.bgWhite + ': ' + "Listening on port ".green + portString.green)
     })
-}
-class user {
-
-    constructor(ip) {
-        this.ip = ip;
-        this.visited = 1;
-    }
-    visited() {
-        this.visited++;
-    }
-
 }
