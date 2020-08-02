@@ -19,4 +19,8 @@ var connection = db.connectDb()
 
 require('./routes')(app,connection)
 
-var status = 1;
+connection.on('error', (err) => {
+    console.log('[ERR]'.black.bgWhite + ': ' + colors.red('Database connection error: %s'), err.code)
+  
+    // If code == disconnect, re-establish connection again?
+  })
